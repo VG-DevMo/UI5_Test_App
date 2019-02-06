@@ -1,0 +1,25 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" 
+		xmlns="sap.m"
+		xmlns:ui="sap.ui.table"
+		 controllerName="sap.ui.demo.todo.controller.App" displayBlock="true">
+	<Shell>
+		<App>
+			<Page title="{i18n>TITLE}" backgroundDesign="Solid">
+				<content>
+
+				</content>
+				<footer>
+					<Bar>
+						<contentLeft>
+							<Button text="back" press="onNavBack" type="Back"/>
+						</contentLeft>
+						<contentRight>
+							<Button text="delete" press="delete" type="Reject" />
+							<Button text="create" press="create" type="Accept"/>
+						</contentRight>
+					</Bar>
+				</footer>
+			</Page>
+		</App>
+	</Shell>
+</mvc:View>

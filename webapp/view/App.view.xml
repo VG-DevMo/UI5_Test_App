@@ -1,0 +1,31 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" 
+		xmlns="sap.m"
+		xmlns:ui="sap.ui.table"
+		controllerName="sap.ui.demo.todo.controller.App" 
+		displayBlock="true">
+	<Shell>
+		<App>
+			<Page title="{i18n>loginTitle}">
+				<content>
+						<FlexBox justifyContent="Center" alignItems="Center" alignContent="Center" height="90%">
+							<VBox alignItems="End">
+								<Text text="{i18n>loginUsername}" class="sapUiSmallMarginTopBottom"/>
+								<Text text="{i18n>loginPassword}" class="sapUiSmallMarginTopBottom"/>
+							</VBox>
+							<VBox>
+								<Input value="{/username}" type="Text" id="login_username" class="sapUiSmallMarginBegin" liveChange="usernameInputChange" valueLiveUpdate="true"/>
+								<Input value="{/password}" type="Password" id="login_password" class="sapUiSmallMarginBegin" liveChange="passwordInputChange" valueLiveUpdate="true" enabled="false" submit="loginUser"/>
+							</VBox>
+						</FlexBox>
+				</content>
+				<footer>
+					<Bar>
+						<contentRight>
+							<Button id="login_submit" text="{i18n>loginSubmit}" press="loginUser" type="Accept" enabled="false"/>
+						</contentRight>
+					</Bar>
+				</footer>
+			</Page>
+		</App>
+	</Shell>
+</mvc:View>
